@@ -1,44 +1,33 @@
-var playerPosition = [0, 0];
-var characters = [
-    ["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
-    ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
-  ];
-
-
-function characterSelect(move) {
-
-  move.forEach(oneMove => {
-
+function streetFighterSelection(fighters, position, moves){
+  result = [];
+  moves.forEach(oneMove => {
     switch(oneMove) {
       case "up":
-      playerPosition[0]--;
-      if(playerPosition[0] < 0) {
-        playerPosition[0] = characters.length - 1;
+      position[0]--;
+      if(position[0] < 0) {
+        position[0] = 0;
       }
       break;
       case "down":
-      playerPosition[0]++;
-      if(playerPosition[0] > 1) {
-        playerPosition[0] = 0;
+      position[0]++;
+      if(position[0] > fighters.length - 1) {
+        position[0] = fighters.length - 1;
       }
       break;
       case "left":
-      playerPosition[1]--;
-      if(playerPosition[1] < 0) {
-        playerPosition[1] = characters[1].length - 1;
+      position[1]--;
+      if(position[1] < 0) {
+        position[1] = fighters[1].length - 1;
       }
       break;
       case "right":
-      playerPosition[1]++;
-      if(playerPosition[1] > 5) {
-        playerPosition[1] = 0;
+      position[1]++;
+      if(position[1] > 5) {
+        position[1] = 0;
       }
       break;
     }
+    result.push(fighters[position[0]][position[1]]);
   });
-  console.log(characters[playerPosition[0]][playerPosition[1]]);
+  return result;
 }
-
-moves = ["left", "left", "down"];
-characterSelect(moves);
-console.log(characters[0].length);
