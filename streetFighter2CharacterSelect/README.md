@@ -6,7 +6,7 @@ The Kata
 
 You'll have to simulate the video game's character selection screen behaviour, more specifically the selection grid. Such screen looks like this:
 
-image: "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1"
+[image]: "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1"
 
 Selection Grid Layout in text:
 
