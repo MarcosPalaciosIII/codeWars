@@ -1,4 +1,7 @@
-#Find the missing letter
+[Find The Missing Letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2)
+
+
+#Find the Missing Letter
 
 Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
 
@@ -10,8 +13,3 @@ Example:
 ['a','b','c','d','f'] -> 'e'
 ['O','Q','R','S'] -> 'P'
 (Use the English alphabet with 26 letters!)
-
-
-
-
-[Code Wars Link:](https://www.codewars.com/kata/5839edaa6754d6fec10000a2)
